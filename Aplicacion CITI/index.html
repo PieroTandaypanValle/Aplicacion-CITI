@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Login y Registro de Usuarios</title>
+    <link rel="stylesheet" href="css/main_login.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="form-container">
+            <!-- Formularios -->
+            <div class="form-content">
+                <!-- Links de los formularios -->
+                <div class="form-tabs">
+                    <li class="tab tab-second active"><a href="#login">Iniciar Sesión</a></li>
+                    <li class="tab tab-first"><a href="#registro">Registrarse</a></li>
+                </div>
+
+                <!-- Contenido de los Formularios -->
+                <div class="tab-content">
+                    <!-- Iniciar Sesión -->
+                    <div id="login">
+                        <h1>Iniciar Sesión</h1>
+                        <form action="#" method="post">
+                            <div class="input-container">
+                                <label>Email <span class="req">*</span></label>
+                                <input type="text" required>
+                            </div>
+
+                            <div class="input-container">
+                                <label>Contraseña <span class="req">*</span></label>
+                                <input type="password" required>
+                            </div>
+                            <input type="button" class="button button-block" value="Iniciar Sesión" onclick="window.location.href='menu.html'">
+                        </form>
+                    </div>
+
+                    <!-- Registrarse -->
+                    <div id="registro">
+                        <h1>Registrarse</h1>
+                        <form action="#" method="post">
+                            <div class="row-top">
+                                <div class="input-container">
+                                    <label>Rut <span class="req">*</span></label>
+                                    <input type="text" required >
+                                </div>
+                                <div class="input-container">
+                                    <label>Email <span class="req">*</span></label>
+                                    <input type="email" required>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label>Nombre Completo <span class="req">*</span></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="row-top">
+                                <div class="input-container">
+                                    <label>Fecha de Nacimiento <span class="req">*</span></label>
+                                    <input type="date" required>
+                                </div>
+                                <div class="input-container">
+                                    <label>Teléfono <span class="req">*</span></label>
+                                    <input type="tel" required>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label>Área de Especialidad <span class="req">*</span></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-container">
+                                <label>Dirección <span class="req">*</span></label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-container">
+                                <label>Tipo de Administrado <span class="req">*</span></label>
+                                <input type="text" required> 
+                            </div>
+                            <div class="input-container">
+                                <label>Salario <span class="req">*</span></label>
+                                <input type="number" required>
+                            </div>
+                            <div class="input-container">
+                                <label>Contraseña <span class="req">*</span></label>
+                                <input type="password" required>
+                            </div>
+
+
+                            <input type="submit" class="button button-block" value="Registrarse">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
